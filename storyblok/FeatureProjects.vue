@@ -7,7 +7,7 @@ defineProps({
   <div class="container" v-editable="blok">
     <h1 style="margin-left: 10px">{{ blok.title }}</h1>
     <div class="featured-projects">
-      <div class="projects" v-for="project in blok.projects" :key="project._uid">
+      <div class="projects" v-for="project in blok.projects" :key="project._uid" style="margin-right: 100px">
         <NuxtLink
           :to="{ name: 'project-slug', params: { slug: project.slug } }"
         >
